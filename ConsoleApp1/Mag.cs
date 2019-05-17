@@ -7,14 +7,18 @@ namespace ConsoleApp1
 {
     class Mag : Postac
     {
-        public void Walcz()
+        public Mag(string imie, string hp) : base(imie, hp)
         {
-
+            
+        }
+        public string Walcz()
+        {
+            return "Walczę";
         }
 
-        public void Pilnuj();
+        public string Pilnuj()
         {
-
+            return "Pilnuję";
         }
         
     }

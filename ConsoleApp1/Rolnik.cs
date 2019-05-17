@@ -5,16 +5,20 @@ using Zadanie;
 
 namespace ConsoleApp1
 {
-    class Rolnik : Postac
+    public class Rolnik : Postac
     {
-        public void Uprawiaj()
+        public Rolnik(string imie, string hp) : base(imie, hp)
         {
 
         }
-
-        public void Zbieraj()
+        public string Uprawiaj()
         {
+            return "Uprawiaj";
+        }
 
+        public string Zbieraj()
+        {
+            return "Zbieram";
         }
     }
 }

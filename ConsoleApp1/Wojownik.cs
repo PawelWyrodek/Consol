@@ -5,21 +5,25 @@ using Zadanie;
 
 namespace ConsoleApp1
 {
-    class Wojownik : Postac
+    public class Wojownik : Postac
     {
-        public void Walcz()
+        public Wojownik(string imie, string hp) : base(imie, hp)
         {
 
         }
-
-        public void Patroluj()
+        public string Walcz()
         {
-
+            return "Walczę";
         }
 
-        public void Pilnuj()
+        public string Patroluj()
         {
+            return "Patroluję";
+        }
 
+        public string Pilnuj()
+        {
+            return "Pilnuje";
         }
     }
 }
