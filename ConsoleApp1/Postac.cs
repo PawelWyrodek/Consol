@@ -8,12 +8,7 @@ namespace Zadanie
         {
          string imie = Imie;
          string hp = Hp;
-    }
-
-    public string PrzedstawSie(string imie)
-    {
-        return imie;
-    }
+        }
 
         postacie.add(new Wojownik("Zbyszko", '100'))
         postacie.add(new Mag("Merlin", '60'))
@@ -26,4 +21,12 @@ namespace Zadanie
           Console.WriteLine(postacie[i].PrzedstawSie());
         }
     }
+
+
+    public string PrzedstawSie(string imie)
+    {
+        return imie;
+    }
+
+
 }
